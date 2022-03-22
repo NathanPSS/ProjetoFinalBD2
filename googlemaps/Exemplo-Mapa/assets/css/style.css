@@ -1,0 +1,28 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        width: 50%;
+        height: 110%;
+        float:right;
+      }
+
+      #form {    
+        width: 50%;
+        height: 17%;
+        justify-content: center;
+      }  
+      #lojas{
+        width: 50%;
+        height: 17%;
+        justify-content: center;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      
+      }
+      
+      

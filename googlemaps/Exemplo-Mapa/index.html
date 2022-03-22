@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atividade API Google</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  
+    <link rel="stylesheet" type="text/css" href="/css" />
+  </head>
+  <body>
+    <h1>Encontros CZ</h1>
+    <div id="map"></div>
+     <h2>Para Adicionar um Novo Local de Encontro</h2>
+      <div id="form">
+        <form action="assets/javascript/mapa.js" method="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" />
+            </div>
+            <div>
+              <label for="descricao">Descricao:</label>
+              <input type="text" id="descricao" />
+          </div>
+          <div>
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor" />
+         </div>
+         <div>
+          <label for="avaliacao">Aavaliação:</label>
+          <input type="text" id="avaliacao" />
+        </div>
+            <div>
+                <button type="button" onclick="salvar()">Salvar</button>
+            </div>
+        </form>
+    </div>  
+    <h2>Para pesquisar sobre um local de encontro</h2>
+  <div id="form">
+      <form>
+        <div>
+          <label for="getNome">Nome:</label>
+          <input type="text" id="getNome" />
+        </div>
+      <div>
+        <button type="button" onclick="posicionar()">Localizar</button>
+      </div>
+    </form>
+  </div>
+ 
+   <h3 id="nomeHTML">Nome:</h3>
+  <h3 id="valorHTML">Valor:</h3>
+  <h3 id="descricaoHTML">Descrição:</h3>
+  <h3 id="avaliacaoHTML">Avaliacao:</h3>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="/js"></script>
+  </body>
+</html>
